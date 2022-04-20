@@ -3,7 +3,7 @@
 
 @media (max-width: 699px) {
   h1 {
-    @include mixins.h1size(0.5);
+    @include mixins.h1size(0.7);
   }
   h2 {
     @include mixins.h2size(0.5);
