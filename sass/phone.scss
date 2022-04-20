@@ -3,10 +3,10 @@
 
 @media (max-width: 699px) {
   h1 {
-    @include mixins.h1size(0.6);
+    @include mixins.h1size(0.5);
   }
   h2 {
-    @include mixins.h2size(0.6);
+    @include mixins.h2size(0.5);
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
