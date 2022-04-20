@@ -3,18 +3,18 @@
 
 @media (max-width: 699px) {
   h1 {
-    @include mixins.h1size(0.5);
+    @include mixins.h1size(0.6);
   }
   h2 {
-    @include mixins.h2size(0.5);
+    @include mixins.h2size(0.6);
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
   h3 {
-    @include mixins.h3size(0.5);
+    @include mixins.h3size(0.6);
   }
   h4 {
-    @include mixins.h4size(0.5);
+    @include mixins.h4size(0.6);
   }
   h5 {
     @include mixins.h5size(0.7);
@@ -24,6 +24,9 @@
   }
   summary {
     @include mixins.h4size(0.5);
+  }
+  .italic {
+    @include mixins.h3size(0.5);
   }
   header {
     margin-bottom: 3rem;
