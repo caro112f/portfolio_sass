@@ -1,0 +1,94 @@
+@use "./mixins";
+@use "./vars";
+
+@media (min-width: 1000px) {
+  #burgermenu {
+    display: none;
+  }
+  h1 {
+    @include mixins.h1size(1.5);
+  }
+  h2 {
+    @include mixins.h2size(1.25);
+  }
+  h3 {
+    @include mixins.h3size(1.25);
+  }
+  h4 {
+    @include mixins.h4size(0.75);
+  }
+  h5 {
+    @include mixins.h5size(0.75);
+  }
+  p {
+    @include mixins.psize(1.2);
+  }
+  summary {
+    @include mixins.h4size(0.75);
+  }
+  nav ul {
+    display: flex;
+  }
+  a {
+    @include mixins.h5size(1);
+  }
+  .italic {
+    @include mixins.h3size(1.5);
+  }
+  main {
+    margin-top: 6rem;
+  }
+
+  #introduction {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6rem;
+  }
+  #boxes {
+    // grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+  .box {
+    margin-top: 2rem;
+  }
+
+  #experience {
+    margin-top: 8rem;
+  }
+  #projects {
+    margin-top: 8rem;
+  }
+  #project_list {
+    display: grid;
+    grid-gap: 10rem;
+    margin-top: 3rem;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    .link {
+      margin-top: 3rem;
+      max-width: 10rem;
+    }
+  }
+  .project_info {
+    display: grid;
+    grid-column: span 2;
+    margin-top: 2rem;
+  }
+  #project1 {
+    margin-top: 3rem;
+    .project_text {
+      grid-area: 1;
+    }
+  }
+  #contact {
+    margin-top: 8rem;
+  }
+  footer {
+    padding: 3rem;
+    gap: 3rem;
+  }
+}

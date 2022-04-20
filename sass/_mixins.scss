@@ -1,0 +1,44 @@
+@mixin for-phone {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-desktop {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin h1size($n) {
+  font-size: $n * 4.209rem;
+}
+@mixin h2size($n) {
+  font-size: $n * 3.157rem;
+}
+@mixin h3size($n) {
+  font-size: $n * 2.369rem;
+}
+@mixin h4size($n) {
+  font-size: $n * 1.777rem;
+}
+@mixin h5size($n) {
+  font-size: $n * 1.333rem;
+}
+@mixin psize($n) {
+  font-size: $n * 1rem;
+}
+
+@mixin displayfont {
+  font-family: "Anton", sans-serif;
+}
+@mixin pfont {
+  font-family: "Work Sans", sans-serif;
+}
+@mixin italic {
+  font-family: "Playfair Display", serif;
+}

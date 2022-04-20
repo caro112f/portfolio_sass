@@ -1,0 +1,90 @@
+@use "./mixins";
+@use "./vars";
+
+@media (min-width: 600px) {
+  nav ul {
+    display: flex;
+  }
+  #burgermenu {
+    display: none;
+  }
+  h1 {
+    @include mixins.h1size(1);
+  }
+  h2 {
+    @include mixins.h2size(1);
+  }
+  h3 {
+    @include mixins.h3size(1);
+  }
+  h4 {
+    @include mixins.h4size(0.75);
+  }
+  h5 {
+    @include mixins.h5size(0.75);
+  }
+  p {
+    @include mixins.psize(1);
+  }
+  summary {
+    @include mixins.h4size(0.5);
+  }
+  .italic {
+    @include mixins.h3size(0.75);
+  }
+
+  #introduction {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
+    grid-gap: 2rem;
+    padding: 3rem;
+  }
+  //   #boxes {
+  //     grid-template-columns: repeat(2, 1fr);
+  //   }
+
+  #experience {
+    margin-top: 4rem;
+    gap: 3rem;
+  }
+  #projects {
+    display: grid;
+    margin-top: 4rem;
+    gap: 3rem;
+  }
+  #project_list {
+    display: grid;
+    gap: 7rem;
+  }
+  .project {
+    gap: 3rem;
+    .link {
+      margin: 2rem;
+      max-width: 10rem;
+    }
+  }
+  .box {
+    width: 15rem;
+    hr {
+      color: vars.$darkblue-color;
+      width: 70%;
+      margin-inline: auto;
+    }
+  }
+  .link_text {
+    font-size: 1.5rem;
+  }
+  .ui_components {
+    padding: 3rem;
+  }
+  #contact_list {
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  footer {
+    margin-top: 6rem;
+    padding: 2rem;
+    gap: 3rem;
+  }
+}

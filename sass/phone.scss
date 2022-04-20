@@ -1,0 +1,126 @@
+@use "./mixins";
+@use "./vars";
+
+@media (max-width: 699px) {
+  h1 {
+    @include mixins.h1size(0.5);
+  }
+  h2 {
+    @include mixins.h2size(0.5);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    @include mixins.h3size(0.5);
+  }
+  h4 {
+    @include mixins.h4size(0.5);
+  }
+  h5 {
+    @include mixins.h5size(0.7);
+  }
+  p {
+    @include mixins.psize(0.9);
+  }
+  summary {
+    @include mixins.h4size(0.5);
+  }
+  header {
+    margin-bottom: 3rem;
+  }
+  #burgermenu {
+    display: block;
+    cursor: pointer;
+  }
+  nav {
+    margin: 1rem;
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    --webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+  }
+  #menu {
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    background-color: vars.$background-color;
+    border: 4px solid vars.$greycolor;
+    padding: 1rem;
+    text-align: center;
+    margin-inline: auto;
+    transition: 0.3s;
+    top: 63px;
+    margin: 1rem;
+    border-radius: 5px;
+    ul {
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .inactive {
+    display: none;
+  }
+
+  #burgermenu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #burgermenu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  #burgermenu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  #introduction {
+    #circle img {
+      max-width: 80%;
+    }
+  }
+  .project {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    .link {
+      margin: 1rem;
+      max-width: 10rem;
+    }
+  }
+  .link_text {
+    font-size: 1rem;
+  }
+  .ui_components {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  .box {
+    width: 80%;
+    hr {
+      border-top: 2px solid vars.$darkblue-color;
+      width: 70%;
+      margin-inline: auto;
+    }
+  }
+  #contact_list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  footer {
+    margin: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    align-items: center;
+    gap: 2rem;
+  }
+  .footer_info {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .extra_info {
+    flex-direction: column;
+  }
+}

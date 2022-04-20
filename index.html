@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@1,600&family=Work+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Caroline Holm Nielsen / Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <section id="nav">
+        <nav>
+          <div id="home">
+            <li><a href="index.html">Welcome</a></li>
+          </div>
+          <div id="menu" class="inactive">
+            <ul>
+              <li>
+                <a href="#introduction" class="nav-link">Introduction</a>
+              </li>
+              <li>
+                <a href="#experience" class="nav-link">Experience</a>
+              </li>
+              <li>
+                <a href="#projects" class="nav-link">Projects</a>
+              </li>
+            </ul>
+          </div>
+          <div id="burgermenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </section>
+      <section id="landing_h1">
+        <h1>
+          Caroline <span class="italic">Holm</span> Nielsen <br />
+          <span class="bottom_right"> Frontend</span>
+          <i class="bottom_right italic">& Design</i>
+        </h1>
+        <!-- <div><img src="header.svg" alt="" /></div> -->
+      </section>
+    </header>
+    <main>
+      <section id="introduction">
+        <div id="portrait_section">
+          <div id="circle">
+            <img src="circle.svg" alt="" />
+          </div>
+          <div id="portrait_img">
+            <img src="me_round.png" alt="portrait" />
+          </div>
+        </div>
+        <div id="intro_text">
+          <h2 id="intro_text_h2" class="h2">Hi, I'm Caroline</h2>
+          <p>
+            I want to create multimedia solutions that make a difference to the
+            company and end-user. My professional focus is to make appropriate,
+            inspiring, and user-friendly content where the functionality and
+            overall performance is optimised. I want to minimize unnecessary
+            confusion, stress and frustration by improving whatever problems I
+            can find. I like to think that I can contribute to various parts of
+            a company's content creation journey, whether it be UX-research,
+            wireframing, visualising content and optimizing communication,
+            Frontend-development or project management.
+            <br />
+            My creative toolbox consists of Illustrator, Photoshop, Xd, Design
+            Thinking Method and Design Sprint among others. You can find my tech
+            stack below.
+          </p>
+        </div>
+      </section>
+      <section id="experience">
+        <h2 class="h2">My Tech Stack</h2>
+        <div id="boxes">
+          <div class="box">
+            <img src="logo/HTML5_logo.png" alt="" />
+            <hr />
+            <h4>Semantic HTML</h4>
+          </div>
+          <div class="box">
+            <img src="logo/css_logo.png" alt="" />
+            <hr />
+            <h4>CSS</h4>
+          </div>
+          <div class="box">
+            <img src="logo/js_logo.png" alt="" />
+            <hr />
+            <h4>JavaScript</h4>
+          </div>
+          <div class="box">
+            <img src="logo/vite_logo.svg" alt="" />
+            <hr />
+            <h4>Vite 2</h4>
+          </div>
+          <div class="box">
+            <img src="logo/sass_logo.png" alt="" />
+            <hr />
+            <h4>SASS</h4>
+          </div>
+          <div class="box">
+            <img src="logo/rest_logo.png" alt="" />
+            <hr />
+            <h4>REST API</h4>
+          </div>
+          <div class="box">
+            <img src="logo/react_logo.png" alt="" />
+            <hr />
+            <h4>REACT</h4>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2 class="h2">Have a look at my previous projects</h2>
+        <div id="project_list">
+          <div id="project1" class="project">
+            <div class="project_img">
+              <img src="img/hacked_hogwarts_web.png" alt="" />
+              <div class="link">
+                <a
+                  href="http://detblaarum.dk/kea/11_justjavascript/hacked_hogwarts/"
+                  class="link_text"
+                  >Visit website</a
+                >
+              </div>
+            </div>
+            <div class="project_text">
+              <h3>Hacked Hogwarts</h3>
+              <h4>The Task:</h4>
+              <p>
+                To show a list of students and their info via JSON and API,
+                where the user can filter, sort, remove/expel, and give selected
+                students unique statuses. The user can also find a sneaky
+                hacking button, that causes different student information to be
+                randomized as well as inserting a new non-student into the
+                array.
+              </p>
+              <h4>How I solved it:</h4>
+              <p>
+                By using a lot of JavaScript functions with both fetch, return
+                values, parameters and closures. I also visualized all of the
+                code using detailed and generalised Activity Diagrams. Styling
+                and responsiveness was ensured with CSS, where I used Grid, Flex
+                and Media Queries.
+              </p>
+              <h4>My favourite part:</h4>
+              <p>
+                Coding the hacking function, because of the way it could
+                manipulate all of the previous code. Seeing all the functions
+                come together to make the site very interactive and fun. Styling
+                the page so the information inside the student list was
+                user-friendly, readable and theme-appropriate (Harry Potter
+                Universe).
+              </p>
+            </div>
+            <div class="project_info">
+              <div class="ui_components">
+                <h4>Keywords</h4>
+                <div id="project_boxes">
+                  <div class="project_box"><p>JavaScript</p></div>
+                  <div class="project_box"><p>JSON</p></div>
+                  <div class="project_box"><p>Return Values</p></div>
+                  <div class="project_box"><p>Parameters</p></div>
+                  <div class="project_box"><p>Activity Diagrams</p></div>
+                  <div class="project_box"><p>Semantic HTML</p></div>
+                  <div class="project_box"><p>Responsive CSS</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="project2" class="project">
+            <div class="project_img">
+              <img src="img/foxholm_web.png" alt="" />
+              <div class="link">
+                <a
+                  href="http://detblaarum.dk/kea/10_eksamen/foxholm_mitdom%C3%A6ne/wordpress/"
+                  class="link_text"
+                  >Visit website</a
+                >
+              </div>
+            </div>
+            <div class="project_text">
+              <h3>Foxholm</h3>
+              <h4>The task:</h4>
+              <p>
+                To generate more sale for the secondhand shop Foxholm on
+                Østerbro by optimizing the website and SoMe of the company. This
+                was my second semester exam project.
+              </p>
+              <h4>How I solved it:</h4>
+              <p>
+                After thorough research using tools such as Business Model
+                Canvas, SWOT, interview techniques, surveys, Google Analytics
+                etc., my group and I built a new website for the shop using
+                Wordpress, Child Themes and Wordpress API. Futhermore, we
+                created video content for both the website and the social media
+                as well as a content plan to optimize the usage of the social
+                media profile.
+              </p>
+              <h4>The main improvements:</h4>
+              <p>
+                In our brand new website for Foxholm we greatly improved the
+                navigation of the site, which had been confusing and problematic
+                before, as well as visualised the content of the website with
+                colors and boxes to make it much more user-friendly and
+                readable. The filtering options were made more concise and
+                logical, and the SoMe content optimized with better quality
+                pictures and motivating text.
+              </p>
+              <h4>My favourite part:</h4>
+              <p>
+                That every part of the solution was tightly connected to our
+                research, and every single feature added to the website served
+                as an optimization to a well-documented problem. Being able to
+                utilize the very best part of Wordpress and at the same time
+                being able to manipulate the code and making the design unique
+                and personal.
+              </p>
+            </div>
+            <div class="project_info">
+              <div class="ui_components">
+                <h4>Keywords</h4>
+                <div id="project_boxes">
+                  <div class="project_box"><p>Wordpress</p></div>
+                  <div class="project_box"><p>Child Themes</p></div>
+                  <div class="project_box"><p>CSS</p></div>
+                  <div class="project_box"><p>Design Thinking</p></div>
+                  <div class="project_box"><p>UX research</p></div>
+                  <div class="project_box"><p>SCRUM</p></div>
+                  <div class="project_box"><p>Wordpress API</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="project1" class="project">
+            <div class="project_img">
+              <img src="img/game_web.png" alt="" />
+              <div class="link">
+                <a
+                  href="http://detblaarum.dk/kea/04_animation/02_js/spil_v8/spil.html"
+                  class="link_text"
+                  >Visit website</a
+                >
+              </div>
+            </div>
+            <div class="project_text">
+              <h3>Stay Healthy Game</h3>
+              <h4>The Task:</h4>
+              <p>
+                In this first semester assignment I had to design and develop a
+                simple game with UI-components and characters that followed a
+                design genre. This was my first assignment using JavaScript and
+                CSS-animations.
+              </p>
+              <h4>How I solved it:</h4>
+              <p>
+                The design aspect was achieved through research on different
+                design genres for game characters, a design sprint to create a
+                general idea of the style and making the backgrounds and
+                characters "come to life" using Adobe Illustrator. I used both
+                Activity Diagrams and State Machine Diagrams to plan the code
+                and functionality of the game and went to work to make the game
+                interactive and inspiring with a lot of CSS and Javascript.
+              </p>
+              <h4>My favourite part:</h4>
+              <p>
+                I loved being creative with the story behind the game and making
+                my characters cute and believable. Getting to know how useful
+                and powerful JavaScript is in combination with CSS was
+                eye-opening and fun.
+              </p>
+            </div>
+            <div class="project_info">
+              <div class="ui_components">
+                <h4>Keywords</h4>
+                <div id="project_boxes">
+                  <div class="project_box"><p>JavaScript</p></div>
+                  <div class="project_box"><p>Illustrator</p></div>
+                  <div class="project_box"><p>CSS</p></div>
+                  <div class="project_box"><p>Keyframes</p></div>
+                  <div class="project_box"><p>Activity Diagrams</p></div>
+                  <div class="project_box"><p>State Machine Diagrams</p></div>
+                  <div class="project_box"><p>Design Sprint</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="footer_section">
+      <footer>
+        <h3>Lets get in touch</h3>
+        <div class="footer_info">
+          <ul>
+            <li><h4>Send me an email:</h4></li>
+            <li><hr /></li>
+            <li><p>Caroline Holm Nielsen</p></li>
+            <li>
+              <a href="mailto:caro112f@stud.kea.dk"
+                ><img src="mail_logo.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+
+          <ul>
+            <li><h4>Have a look:</h4></li>
+            <li><hr /></li>
+            <li>
+              <a href="https://github.com/caro112f"
+                ><img src="github_icon.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/caroline-holm-nielsen-ab8568231/"
+                ><img src="linkedinlogo.webp" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <div class="extra_info">
+        <p>
+          <i>This site is being updated continuosly</i>
+        </p>
+        <p><i>/</i></p>
+        <p><i>Created with Vite and SASS</i></p>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
