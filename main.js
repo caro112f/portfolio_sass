@@ -2,6 +2,7 @@ import "./sass/main.scss";
 import "./sass/tablet.scss";
 import "./sass/phone.scss";
 import "./sass/desktop.scss";
+import "./gsap_reveal.js";
 
 const hamburger = document.querySelector("#burgermenu");
 const menuList = document.querySelector("#menu");
@@ -32,19 +33,19 @@ function mobileMenu() {
   }
 }
 function gsapAnimations() {
-  let slideIn = gsap.timeline({
-    duration: 1.2,
-    scrollTrigger: {
-      trigger: "header",
-      start: "40%",
-      endTrigger: "#introduction",
-      end: "30%",
+  // let introSlideIn = gsap.timeline({
+  //   duration: 1.2,
+  //   scrollTrigger: {
+  //     trigger: "header",
+  //     start: "40%",
+  //     endTrigger: "#introduction",
+  //     end: "30%",
 
-      markers: false,
-    },
-  });
-  slideIn.from("#intro_text_h2", { opacity: 0, x: "5%" });
-  slideIn.to("#intro_text_h2", { x: "0%", opacity: 100 });
+  //     markers: false,
+  //   },
+  // });
+  // introSlideIn.from("#intro_text_h2", { opacity: 0, x: "5%" });
+  // introSlideIn.to("#intro_text_h2", { x: "0%", opacity: 100 });
 
   let h1Animation = gsap.timeline({
     duration: 1.5,
