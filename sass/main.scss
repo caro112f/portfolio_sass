@@ -90,6 +90,7 @@ main {
   max-width: 1300px;
   margin-inline: auto;
 }
+
 #introduction {
   margin: 1rem;
   margin-top: 5rem;
@@ -206,8 +207,11 @@ main {
     text-align: center;
     background-color: vars.$darkblue-color;
     border-radius: 5px;
-
     margin-inline: auto;
+    transition: 0.5s ease-out;
+  }
+  .link:hover {
+    scale: 1.1;
   }
   .link_text {
     color: rgb(247, 244, 240);
@@ -266,6 +270,9 @@ footer {
       width: 15rem;
       margin-bottom: 1rem;
     }
+  }
+  .social_icon:hover {
+    scale: 1.1;
   }
 }
 .extra_info {
