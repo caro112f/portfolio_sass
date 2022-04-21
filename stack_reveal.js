@@ -5,7 +5,7 @@ function hide(elem) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  gsap.utils.toArray(".reveal").forEach(function (elem) {
+  gsap.utils.toArray(".box").forEach(function (elem) {
     hide(elem); // assure that the element is hidden when scrolled into view
 
     ScrollTrigger.create({
@@ -13,20 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
       onEnter: function () {
         animateFrom(elem);
       },
-      //   onEnterBack: function () {
-      //     animateFrom(elem, -1);
-      //   },
-      //   onLeave: function () {
-      //     hide(elem);
-      //   }, // assure that the element is hidden when scrolled into view
     });
   });
 });
 
 function animateFrom(elem, direction) {
   direction = direction || 1;
-  var x = direction * 100,
-    y = 0;
+  var x = 0,
+    y = direction * 100;
   if (elem.classList.contains("fromLeft")) {
     x = -100;
     y = 0;
@@ -38,9 +32,11 @@ function animateFrom(elem, direction) {
   elem.style.opacity = "0";
   gsap.fromTo(
     elem,
-    { x: x, y: y, autoAlpha: 0 },
+    { x: x, y: y, stagger: { amount: 1 }, autoAlpha: 0 },
     {
-      duration: 1.25,
+      duration: 3,
+      stagger: { amount: 2 },
+      opacity: 1,
       x: 0,
       y: 0,
       autoAlpha: 1,
