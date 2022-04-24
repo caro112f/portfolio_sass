@@ -2,8 +2,8 @@ import "./sass/main.scss";
 import "./sass/tablet.scss";
 import "./sass/phone.scss";
 import "./sass/desktop.scss";
-import "./gsap_reveal.js";
-import "./stack_reveal.js";
+import "./js/gsap_reveal.js";
+import "./js/stack_reveal.js";
 
 const hamburger = document.querySelector("#burgermenu");
 const menuList = document.querySelector("#menu");

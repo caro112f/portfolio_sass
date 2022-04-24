@@ -32,10 +32,9 @@ function animateFrom(elem, direction) {
   elem.style.opacity = "0";
   gsap.fromTo(
     elem,
-    { x: x, y: y, stagger: { amount: 1 }, autoAlpha: 0 },
+    { x: x, y: y, autoAlpha: 0 },
     {
       duration: 3,
-      stagger: { amount: 2 },
       opacity: 1,
       x: 0,
       y: 0,
