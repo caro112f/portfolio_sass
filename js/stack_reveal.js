@@ -35,7 +35,7 @@ function animateFrom(elem, direction) {
     { x: x, y: y, autoAlpha: 0 },
     {
       duration: 3,
-      opacity: 1,
+
       x: 0,
       y: 0,
       autoAlpha: 1,
