@@ -2,6 +2,7 @@ import "./sass/main.scss";
 import "./sass/tablet.scss";
 import "./sass/phone.scss";
 import "./sass/desktop.scss";
+
 import "./js/gsap_reveal.js";
 import "./js/stack_reveal.js";
 
